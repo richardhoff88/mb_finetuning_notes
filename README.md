@@ -1,14 +1,12 @@
 # MathBeaver Fine-tuning Setup Guide
 
-This guide documents the steps to fine-tune the Microsoft Phi-4 model using chain-of-thought mathematical reasoning data on RunPod.
+## Overview
 
-## Project Overview
-
-This project fine-tunes the Phi-4-reasoning-plus model with sum-of-squares chain-of-thought training data using the LoRA (Low-Rank Adaptation) technique through Axolotl.
+This project fine-tunes the Phi-4-reasoning-plus model with SOS chain of thought training data (from Bohan) using the LoRA through Axolotl.
 
 ## Prerequisites
 
-- RunPod instance with CUDA-compatible GPU (recommended: 24GB+ VRAM)
+- RunPod instance with enough disk memory
 - SSH access to RunPod
 - Python 3.11 or higher
 - Access to training data (Google Drive folder)
@@ -21,26 +19,21 @@ SSH into your RunPod instance and navigate to the workspace:
 
 ```bash
 # Connect to RunPod
-ssh your-runpod-connection
+ssh runpod-tcp
 
-# Navigate to workspace
+# CD to workspace
 cd /workspace
 
-# Clone or navigate to project directory
+# Git clone repo
 cd mathbeaver-finetune
-
-
-SSH into runpod-tcp
-
-cd into workspace in home
-
-cd into mathbeaver_finetune
-
 cd into "data" folder
-
 pip install gdown
 
-run: gdown --folder https://drive.google.com/drive/folders/1E1tHwS7YQOajZcjWsMXpTaPdRZm9jYcC --remaining-ok
+```
+### Run
+```bash
+
+gdown --folder https://drive.google.com/drive/folders/1E1tHwS7YQOajZcjWsMXpTaPdRZm9jYcC --remaining-ok
 
 to get the first 50 folders from Bohan's google drive of SOS training data
 
