@@ -30,6 +30,12 @@ cd into "data" folder
 pip install gdown
 
 ```
+
+### Edit
+```bash
+Edit config_cot.yaml
+```
+
 ### Run
 ```bash
 
