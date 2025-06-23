@@ -53,15 +53,15 @@ pip install axolotl
 
 ### Preprocess data to ChatML format
 
-run preprocess_data_chatml.py
+run `python preprocess_data_chatml.py`
 
 ### Configure config file (with small number of examples)
 
-Run training script: python run_training.py --config config_cot.yaml
+Run training script: `python run_training.py --config config_test.yaml`
 
 ### Results
 
-Output saved to outputs directory
+Output saved to `outputs` directory
 
 
 
