@@ -32,7 +32,7 @@ pip install gdown
 ```
 
 
-### Download files from Bohan's drive
+### 2. Download files from Bohan's drive
 ```bash
 
 # download training data into "data" in the "Data_SOS_Cot" folder
@@ -40,7 +40,7 @@ pip install gdown
 gdown --folder https://drive.google.com/drive/folders/1E1tHwS7YQOajZcjWsMXpTaPdRZm9jYcC --remaining-ok
 ```
 
-### Set up environment 
+### 3. Set up environment 
 ``` bash
 conda create -n phi-tuning python=3.11
 conda init
@@ -51,15 +51,15 @@ conda activate phi-tuning
 pip install axolotl
 ```
 
-### Preprocess data to ChatML format
+### 4. Preprocess data to ChatML format
 
 run `python preprocess_data_chatml.py`
 
-### Configure config file (with small number of examples)
+### 5. Configure config file (with small number of examples)
 
 Run training script: `python run_training.py --config config_test.yaml`
 
-### Results
+### 6. Results
 
 Output saved to `outputs` directory
 
