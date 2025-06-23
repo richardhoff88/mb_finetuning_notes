@@ -31,49 +31,37 @@ pip install gdown
 
 ```
 
-### Edit
+
+### Download files from Bohan's drive
 ```bash
-Edit config_cot.yaml
+
+# download training data into "data" in the "Data_SOS_Cot" folder
+# to get the first 50 folders from Bohan's google drive of SOS training data
+gdown --folder https://drive.google.com/drive/folders/1E1tHwS7YQOajZcjWsMXpTaPdRZm9jYcC --remaining-ok
 ```
 
-### Run
-```bash
-
-gdown --folder https://drive.google.com/drive/folders/1E1tHwS7YQOajZcjWsMXpTaPdRZm9jYcC --remaining-ok
-
-to get the first 50 folders from Bohan's google drive of SOS training data
-
-download training data into "data" in the "Data_SOS_Cot" folder
-
+### Set up environment 
+``` bash
 conda create -n phi-tuning python=3.11
 conda init
-restart shell
+# restart shell
 conda activate phi-tuning
 
-# Install Axolotl
+#install axolotl
 pip install axolotl
+```
 
-Preprocess data to ChatML format
+### Preprocess data to ChatML format
 
-Edit config file: config_cot.yaml
+run preprocess_data_chatml.py
 
-Start screen session
-
-screen -S training
+### Configure config file (with small number of examples)
 
 Run training script: python run_training.py --config config_cot.yaml
 
-ctrl+A, then D
+### Results
 
-Monitor progress later:
-
-ssh your-runpod-connection
-
-# List screen sessions
-screen -ls
-
-# Reconnect to your training session
-screen -r training
+Output saved to outputs directory
 
 
 
