@@ -31,7 +31,7 @@ pip install gdown
 
 ```
 
-### 2. Clone Shivam's repo
+### 2. Clone Shivam's repo (Richard's branch)
 ```bash
 git clone https://github.com/Shivamshaiv/mathbeaver-finetune.git
 ```
