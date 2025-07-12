@@ -4,6 +4,9 @@
 
 This project fine-tunes the Phi-4-reasoning-plus model with SOS chain of thought training data (from Bohan) using the LoRA through Axolotl.
 
+[<img src="https://raw.githubusercontent.com/axolotl-ai-cloud/axolotl/main/image/axolotl-badge-web.png" alt="Built with Axolotl" width="200" height="32"/>](https://github.com/axolotl-ai-cloud/axolotl)
+<details><summary>See axolotl config</summary>
+
 ## Prerequisites
 
 - RunPod instance with enough disk memory
