@@ -6,6 +6,10 @@ This project fine-tunes the Phi-4-reasoning-plus model with SOS chain of thought
 
 [<img src="https://raw.githubusercontent.com/axolotl-ai-cloud/axolotl/main/image/axolotl-badge-web.png" alt="Built with Axolotl" width="200" height="32"/>](https://github.com/axolotl-ai-cloud/axolotl)
 
+# Colab Link to QA testing with trained model
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1p37fHrCF41H8iUPr-23Sm1g37I53yikm?usp=sharing)
+
 ## Prerequisites
 
 - RunPod instance with enough disk memory
